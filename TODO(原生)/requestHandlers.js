@@ -66,7 +66,7 @@ function todo(req, res) {
                             res.end(JSON.stringify(ret_data));
                         }
                         else {
-                            ret_data['id'] = result['id'];
+                            ret_data['id'] = result['insertId'];
                             ret_data['status'] = 'Created';
 
                             res.writeHead(201, {'Content-Type': 'application/json'});
