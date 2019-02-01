@@ -78,15 +78,9 @@
 
 4. 删除todo
 
-   url : `/todo`
+   url : `/todo/:id`
 
    method:`delete`
-
-   headers data:
-
-   | 参数名 | 必选 | 类型 |
-   | ------ | ---- | ---- |
-   | id     | 是   | int  |
 
    result：
 
@@ -100,7 +94,7 @@
 
 5. 更新todo
 
-   url : `/todo`
+   url : `/todo/:id`
 
    method:`put`
 
@@ -110,7 +104,6 @@
    | -------- | ---- | -------- |
    | content  | 是   | string   |
    | deadline | 是   | datetime |
-   | id       | 是   | int      |
 
    result：
 
